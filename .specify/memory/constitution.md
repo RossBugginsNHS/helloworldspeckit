@@ -28,6 +28,7 @@ All events and commands use the CloudEvents specification. W3C distributed traci
 
 ### VIII. TypeScript Strictness & Engineering Discipline
 All code is written in TypeScript. No use of `any`. All functions and methods have explicit parameter and return types. Interfaces are used for all contracts. Dependency injection is mandatory for all services and providers. No scattered constants—use symbols or enums for lookups. Service providers (e.g., date/time) are injected, not instantiated directly.
+Builder and factory patterns MUST be used where they provide clarity, flexibility, or testability (e.g., for complex object construction, service instantiation, or configuration).
 
 
 
@@ -88,4 +89,4 @@ All code is written in TypeScript. No use of `any`. All functions and methods ha
 - Compliance is reviewed at every major milestone and before each release.
 
 
-**Version**: 1.2.0 | **Ratified**: 2026-01-30 | **Last Amended**: 2026-01-30
+**Version**: 1.2.1 | **Ratified**: 2026-01-30 | **Last Amended**: 2026-01-30
